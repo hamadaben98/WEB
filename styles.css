@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+}
+.container {
+  position: relative;
+  display: inline-block;
+}
+video, canvas {
+  width: 640px;
+  height: 480px;
+  border: 2px solid #333;
+}
+.controls {
+  margin-top: 10px;
+}
+.stickers {
+  margin-top: 20px;
+}
+.stickers img {
+  width: 80px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.stickers img.selected {
+  border-color: red;
+}

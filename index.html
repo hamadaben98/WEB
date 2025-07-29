@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Montage Webcam</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>📸 Application de Montage Webcam</h1>
+  <div class="container">
+    <video id="webcam" autoplay playsinline></video>
+    <canvas id="canvas"></canvas>
+    <div class="controls">
+      <button onclick="takePhoto()">📷 Prendre la photo</button>
+      <button onclick="downloadPhoto()">💾 Télécharger</button>
+    </div>
+    <div class="stickers">
+      <p>🖼️ Choisissez un sticker :</p>
+      <img src="stickers/lunettes.png" onclick="selectSticker(this)" />
+      <img src="stickers/chapeau.png" onclick="selectSticker(this)" />
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
